@@ -1,20 +1,47 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <img src="assets/logo.jpg" alt="Udemy Logo" class="logo" />
+      <ion-title>Web Design for Web Developers: Build Beautiful Websites!</ion-title>
+    </ion-buttons>
+    
+    <ion-buttons slot="end">
+      <ion-button>Leave a rating</ion-button>
+      <ion-button slot="end">Your progress</ion-button>
+      <ion-button fill="outline">Share</ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+<ion-content>
+  <div class="course-container">
+    <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+      <ion-fab-button (click)="openChatModal()">
+        <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+    <!-- <app-chat-box></app-chat-box> -->
+    <!-- Video Section -->
+    <div class="left-section">
+      <div class="video-container">
+        <iframe
+          src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+          title="Course Video"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <!-- Tabs Section -->
+      <app-tabs-content class="tabs-content"></app-tabs-content>
+    </div>
+
+    <!-- Right Section -->
+    <div class="right-section">
+      <!-- Course Content Section -->
+      <app-course-content></app-course-content>
+    </div>
   </div>
 </ion-content>
+
