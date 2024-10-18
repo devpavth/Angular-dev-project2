@@ -1,0 +1,223 @@
+.course-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+
+ion-accordion[open] .ion-padding {
+  display: block; 
+}
+  
+
+ion-label {
+    font-size: 16px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+  
+  ion-checkbox {
+    --background: #5cb85c;
+  }
+
+  .logo{
+    width: 100px;
+    height: 45px;
+  }
+  
+  ion-tab-bar{
+    // margin-left: -80px;
+    margin-top: 610px;
+    width: 75%;
+  }
+
+  ion-tab{
+    margin-left: 1px;
+  }
+
+  .overview-heading{
+    width: 75%;
+  }
+
+  .overview-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .ratings-section {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+  
+    .rating {
+      display: flex;
+      align-items: center;
+    }
+  
+    ion-icon {
+      color: #f4c542;
+      margin-right: 20px;
+    }
+  
+    .students,
+    .total-time {
+      font-size: 18px;
+      margin-left: 25px;
+    }
+  }
+  
+  .course-info {
+    margin-bottom: 20px;
+    ion-icon {
+      margin-right: 5px;
+    }
+  }
+  
+  .by-numbers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  
+    div {
+      width: 45%;
+      margin-bottom: 10px;
+    }
+  
+    strong {
+      display: block;
+      margin-bottom: 5px;
+    }
+  }
+  
+  .features {
+    margin-bottom: 20px;
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+  }
+  
+  .description {
+    font-size: 14px;
+  
+    strong {
+      display: block;
+      margin-top: 10px;
+    }
+  }
+  
+
+
+
+
+  
+
+
+
+
+
+
+/* Mobile view  */
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 50px; 
+    margin-right: 2px;
+  }
+
+  ion-title {
+    font-size: 14px; 
+  }
+
+  ion-toolbar {
+    flex-wrap: wrap; 
+  }
+
+
+  ion-buttons[slot="end"] {
+    display: none;
+  }
+
+  ion-button {
+    margin-bottom: 5px; 
+  }
+
+ 
+  ion-item {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  ion-tabs{
+    display: none;
+  }
+
+
+
+  ion-tab-bar {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  ion-tab-button {
+    font-size: 12px;
+  }
+
+  .by-numbers div {
+    margin-bottom: 10px;
+  }
+
+  .ratings-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .course-info {
+    font-size: 14px;
+  }
+
+  .by-numbers {
+    font-size: 12px;
+  }
+
+  .overview-heading {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+}
+
+
+
+
+
+
+@media screen and (max-width: 945px) {
+  ion-tabs{
+    display: none;
+  }
+
+  ion-buttons[slot="end"] {
+    display: none;
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 860px) {
+  ion-tabs{
+    display: none;
+  }
+ 
+  ion-buttons[slot="end"] {
+    display: none;
+  }
+}
+

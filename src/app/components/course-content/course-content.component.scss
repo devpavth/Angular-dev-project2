@@ -1,0 +1,108 @@
+.course-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  
+
+  
+  ion-label {
+    font-size: 16px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  
+  ion-checkbox {
+    --background: #5cb85c;
+  }
+
+  .logo{
+    width: 100px;
+    height: 45px;
+  }
+  
+  ion-tab-bar{
+    margin-left: -100px;
+    margin-top: 510px;
+    width: 75%;
+  }
+
+  ion-tab{
+    margin-left: 50px;
+  }
+
+  .overview-heading{
+    width: 75%;
+  }
+
+  .overview-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .ratings-section {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+  
+    .rating {
+      display: flex;
+      align-items: center;
+    }
+  
+    ion-icon {
+      color: #f4c542;
+      margin-right: 20px;
+    }
+  
+    .students,
+    .total-time {
+      font-size: 18px;
+      margin-left: 25px;
+    }
+  }
+  
+  .course-info {
+    margin-bottom: 20px;
+    ion-icon {
+      margin-right: 5px;
+    }
+  }
+  
+  .by-numbers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  
+    div {
+      width: 45%;
+      margin-bottom: 10px;
+    }
+  
+    strong {
+      display: block;
+      margin-bottom: 5px;
+    }
+  }
+  
+  .features {
+    margin-bottom: 20px;
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+  }
+  
+  .description {
+    font-size: 14px;
+  
+    strong {
+      display: block;
+      margin-top: 10px;
+    }
+  }
+  

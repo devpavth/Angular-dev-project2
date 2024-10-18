@@ -1,0 +1,57 @@
+<ion-segment color="dark" [(ngModel)]="selectedSegment">
+  <ion-segment-button value="search">
+    <ion-icon name="search-outline"></ion-icon>
+  </ion-segment-button>
+  <ion-segment-button value="overview">
+    <ion-label>Overview</ion-label>
+  </ion-segment-button>
+  <ion-segment-button value="notes">
+    <ion-label>Notes</ion-label>
+  </ion-segment-button>
+  <ion-segment-button value="announcements">
+    <ion-label>Announcements</ion-label>
+  </ion-segment-button>
+  <ion-segment-button value="reviews">
+    <ion-label>Reviews</ion-label>
+  </ion-segment-button>
+  <ion-segment-button value="tools">
+    <ion-label>Learning Tools</ion-label>
+  </ion-segment-button>
+</ion-segment>
+
+
+<div [ngSwitch]="selectedSegment">
+  <div *ngSwitchCase="'search'">
+    <h3>Search</h3>
+  </div>
+  <div *ngSwitchCase="'overview'">
+    <h3>Course Overview</h3>
+  </div>
+  <div *ngSwitchCase="'notes'">
+    <h3>Notes</h3>
+  </div>
+  <div *ngSwitchCase="'announcements'">
+    <h3>Announcements</h3>
+  </div>
+  <div *ngSwitchCase="'reviews'">
+    <h3>Student Reviews</h3>
+  </div>
+  <div *ngSwitchCase="'tools'">
+    <h3>Learning Tools</h3>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
